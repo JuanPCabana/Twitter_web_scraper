@@ -5,6 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver import Chrome
 
+
+
+#Created By JuanPCabana
+
+
 def get_tweet_data(tweet):
     #se extrae el tweet con esta funcion
     
