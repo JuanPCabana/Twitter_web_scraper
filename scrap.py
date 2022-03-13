@@ -75,11 +75,12 @@ sleep(2)
 driver.get('http://www.twitter.com/login')
 sleep(4)
 #se inicia sesion
+username = input('write your twitter username')
 my_username = driver.find_element_by_xpath('//input[@autocomplete="username"]')
-my_username.send_keys('El_Juanchozz')
+my_username.send_keys(username)
 my_username.send_keys(Keys.RETURN)
 
-my_password = 'Juan tiene 2 hermanos.'
+my_password = input('write your twitter password')
 sleep(4)
 password = driver.find_element_by_xpath('//input[@name="password"]')
 password.send_keys(my_password)
